@@ -1,0 +1,229 @@
+{
+    "appversion": "App version: {}",
+    "global": {
+        "clearnotifications": "Clear notifications",
+        "termsofservices": "Terms and Services",
+        "policyprivacy": "Policy privacy",
+        "privacy": "Security",
+        "helpsupport": "Help and Support",
+        "biometrics": "Biometric",
+        "notifications": "Notifications",
+        "language": "Language",
+        "settings": "Settings",
+        "general": "General",
+        "continuer": "Continue",
+        "skip": "SKIP",
+        "back": "Back",
+        "verify": "Verify",
+        "login": "Log in",
+        "register": "Sign in",
+        "sendinstruction": "Send instruction",
+        "backto": "Back to {}",
+        "usepass": "Use password",
+        "tryagain": "Try again",
+        "refresh": "Refresh"
+    },
+    "auth": {
+        "create": {
+            "title": "Create an account",
+            "select_role": "Select Role",
+            "full_name": "Full Name",
+            "phone_number": "Phone Number",
+            "email": "Email",
+            "create_password": "Create Password",
+            "password_hint": "Must be at least 8 characters and alphanumeric.",
+            "terms_text": "I agree to the ",
+            "terms_of_service": "Terms of Service",
+            "and": " and ",
+            "data_policy": "Data Policy",
+            "enter_full_name": "Enter your full name",
+            "enter_phone_number": "Enter phone number",
+            "enter_email": "Enter your email",
+            "enter_password": "Enter your password",
+            "phone_validation_error": "Please enter a valid phone number",
+            "account_created": "Account created successfully!"
+        },
+        "login": {
+            "title": "Welcome back!",
+            "desc": "Introduce your number and password",
+            "password": "Password",
+            "enter_password": "Min 8 chars, alphanumeric",
+            "forgot_pass": "forgot my password"
+        },
+        "forgot": {
+            "title": "Forgot Password",
+            "desc": "Enter your email or phone number to receive reset instructions"
+        },
+        "verifyphone": {
+            "title": "Phone Verification",
+            "desc": "A 6 digits code have been sent to ",
+            "verifypin": "Verification Code",
+            "resendcode": "Resend code in",
+            "code_sent": "Verification code sent successfully!",
+            "verification_success": "Phone number verified successfully!",
+            "resend" : "Resend code",
+            "invalidcode": "*invalid code. please try again"
+        },
+        "biometric": {
+            "title": "Welcome!",
+            "desc": "Use your biometric to sign in quickly",
+            "touchid": {
+                "title": "Touch ID",
+                "desc": "Place your finger on the sensor",
+                "scanning": "Scanning...",
+                "fail": "Fingerprint not recongnized"
+            },
+            "faceid": {
+                "title": "Face ID",
+                "desc": "Look at the camera",
+                "scanning": "Scan...",
+                "fail": "face not recongnized"
+            }
+        }
+    },
+    "home": {
+        "welcome": {
+            "title": "Welcome to HEMLE! Let’s connect your child’s education"
+        },
+        "option": {
+            "apply": {
+                "title": "Apply to a partner school →",
+                "subtitle": "Your child is not yet affiliated with a school"
+            },
+            "code": {
+                "title": "Enter a school code →",
+                "subtitle": "Your child is already enrolled in a school"
+            }
+        },
+        "code": {
+            "title": "My child is enrolled and I have a school code",
+            "description": "If your child is already registered at one of our partner schools, enter the code provided by its schools to access real-time updates and services.",
+            "input_label": "Enter school code",
+            "input_hint": "e.g., HEINT254",
+            "validate_button": "Validate code"
+        },
+        "find_school": {
+            "title": "My child is not yet enrolled in a school",
+            "description": "Browse our list of partner schools, compare programs and tuition, and apply directly through the app.",
+            "button": "Find a School"
+        },
+        "appbar": {
+            "nochild": "No child selected"
+        }
+    },
+    "nav": {
+        "bottombar": {
+            "label": {
+                "home": "Home",
+                "results": "Results",
+                "transport": "Transport",
+                "clubs": "Clubs",
+                "chats": "Chats"
+            }
+        }
+    },
+    "error": {
+        "system": {
+            "title": "System Error :/\nServer not found"
+        },
+        "connect": {
+            "title": "Lost connection :/\nTry refreshing "
+        }
+    },
+    "findschool": {
+        "title": "Find a School",
+        "searchschool": "Search for a school...",
+        "nursery": "Nursery",
+        "primary": "Primary",
+        "secondary": "Secondary",
+        "private": "Private",
+        "public": "Public",
+        "allcities": "All Cities",
+        "alltypes": "All Types",
+        "allstatus": "All Status",
+        "allranges": "All Ranges",
+        "resultslength": "{} results",
+        "priceperyear": "/ year",
+        "noresults": "No schools found matching your criteria",
+        "clearfilters": "Clear all filters"
+    },
+    "schoolprofile": {
+        "reviews": {
+            "title": "Reviews"
+        }
+    },
+    "application_status": {
+        "accepted": {
+            "title": "Accepted",
+            "description": "Congratulations! Your child has been accepted in {schoolName}. You can access now to your account."
+        },
+        "pending": {
+            "title": "Pending",
+            "description": "Your application is being processed by administration of {schoolName}. Expect news soon."
+        },
+        "rejected": {
+            "title": "Rejected",
+            "description": "Your application was not accepted for this term. You may apply again during the next enrollment period."
+        },
+        "school_code": "School code",
+        "access_account": "Access My Account",
+        "back_home": "Back to Home",
+        "try_again": "Apply Again"
+    },
+    "tuition": {
+        "title": "Wallet",
+        "desc": "Overview of Tuition Fees",
+        "current": "Tuition",
+        "history": "History",
+        "upcoming": "Upcoming",
+        "current_page": "Current Tuition",
+        "history_page": "Tuition History",
+        "search_transactions": "Search transactions",
+        "all_children": "All children",
+        "all_schools": "All schools",
+        "upcoming_page": "Upcoming Tuition"
+    },
+    "reminder": {
+        "set_reminder": "Set reminder",
+        "set_alert_description": "Set an alert to help you not forget",
+        "receive_alert": "Receive Alert",
+        "alert_time": "Alert Time",
+        "delivery_channels": "Delivery Channels",
+        "channel_push": "Push",
+        "channel_sms": "SMS",
+        "channel_email": "Email",
+        "save_alert": "Save Alert",
+        "pay_now": "Pay Now",
+        "set_reminder_button": "Set Reminder"
+    },
+    "payment_status": {
+        "title": "Payment Status",
+        "desc": "Real-time status of your payment",
+        "pending": "Pending",
+        "processing": "Processing",
+        "verificating": "Verificating",
+        "completed": "Completed",
+        "pending_desc": "Waiting for payment confirmation",
+        "processing_desc": "Your payment is being processed",
+        "verificating_desc": "Your payment is being verificated",
+        "completed_desc": "Payment confirmed successfully",
+        "reference_id": "Reference ID",
+        "amount": "Amount",
+        "payment_details": "Payment Details",
+        "method": "Method",
+        "last_updated": "Last Updated",
+        "estimated_time": "Estimated time",
+        "view_history": "View History"
+    },
+    "results": {
+        "title": "Results",
+        "select_term": "Select Term",
+        "mathematics": "Mathematics",
+        "english": "English",
+        "science": "Science",
+        "history": "History",
+        "transport": "Transport",
+        "class_average": "Class Average",
+        "no_scores": "No scores available"
+    }
+}
