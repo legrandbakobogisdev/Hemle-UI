@@ -1,0 +1,459 @@
+{
+    "appversion": "Version de l'application: {}",
+    "global": {
+        "clearnotifications": "Effacer les notifications",
+        "termsofservices": "Termes et Services",
+        "policyprivacy": "Police de securite",
+        "privacy": "Securite",
+        "helpsupport": "Aide et Support",
+        "biometrics": "Biometrique",
+        "notifications": "Notifications",
+        "language": "Langue",
+        "settings": "Parametres",
+        "general": "General",
+        "continuer": "Continuer",
+        "skip": "PASSER",
+        "back": "Retour",
+        "verify": "Verifier",
+        "login": "Se Connecter",
+        "register": "S'inscrire",
+        "sendinstruction": "Envoyer les instructions",
+        "backto": "Retour vers {}",
+        "usepass": "Utiliser le mot de passe",
+        "tryagain": "Reessayer",
+        "refresh": "Rafraichir",
+        "amount": "Prix",
+        "pending": "En attente",
+        "approved": "Approuve",
+        "failed": "Echec",
+        "school": "Ecole",
+        "paynow": "Payer maintenant",
+        "setreminder": "Me Rappeler",
+        "clear_filters": "Effacer les filtres",
+        "no_transactions": "Aucune transaction",
+        "grades": "Notes",
+        "homework": "Devoirs",
+        "comment": "Commentaires",
+        "information": "Informations",
+        "events": "Événements",
+        "instructor": "Instructeur",
+        "capacity": "Capacité",
+        "classroom": "Salle de classe",
+        "description": "Description",
+        "generalinfo": "Informations Générales",
+        "schedules": "Horaires",
+        "unregister": "Se désinscrire",
+        "chats": "Discussions",
+        "newchat": "Nouvelle discussion",
+        "selectimagefromgallery": "Sélectionner une image depuis la galerie",
+        "selectdocuments": "Sélectionner des documents",
+        "subjet": "Sujet",
+        "message": "Message",
+        "tomorrow": "demain",
+        "modify": "Modifier",
+        "contact": "Contact",
+        "options": "Options",
+        "wallet": "Portefeuille",
+        "editprofile": "Modifier le Profil",
+        "fullname": "Nom Complet",
+        "phonenumber": "Numéro de Téléphone",
+        "email": "Email",
+        "children": "Enfants",
+        "age": "Âge",
+        "dateofbirth": "Date de Naissance",
+        "level": "Niveau",
+        "gender": "Genre",
+        "editchildprofile": "Modifier le Profil de l'Enfant",
+        "applynewschool": "Postuler à une Nouvelle École",
+        "backtohome": "Retour à l'Accueil",
+        "type": "Type",
+        "affiliation": "Affiliation",
+        "accreditation": "Accréditation",
+        "address": "Adresse",
+        "transport": "Transport",
+        "extracurricularactivities": "Activités Extra-scolaires",
+        "tuitionfees": "Frais de Scolarité",
+        "aditionalfees": "Frais Supplémentaires",
+        "scholarships": "Bourses",
+        "photos": "Images",
+        "continue": "Continuer",
+        "started": "Commencer",
+        "createanaccount": "Creer un compte",
+        "forgetmypassword": "Mot de passe oublie?",
+        "savechange": "Sauvegarder les modifications",
+        "termsservices": "Termes Et Services"
+    },
+    "detailschild": {
+        "title": "Confirmer les Informations",
+        "desc": "Veuillez vérifier les informations avant de soumettre"
+    },
+    "selectchild": {
+        "title": "Sélectionner un Enfant",
+        "desc": "Choisissez un enfant pour postuler",
+        "existingchild": "Enfants Existants",
+        "addnewprofiile": "Ajouter un Nouveau Profil"
+    },
+    "applications": {
+        "title": "Candidatures",
+        "desc": "Suivez et gérez vos candidatures scolaires"
+    },
+    "applicationstatus": {
+        "title": "Statut de la Candidature",
+        "desc": "Suivez l'avancement de votre candidature",
+        "Application": "Candidature",
+        "submittedon": "Soumis le"
+    },
+    "detailschildmodal": {
+        "profilesummary": "Résumé du Profil",
+        "backtoform": "Retour au Formulaire"
+    },
+    "selectdocuments": {
+        "passportorid": {
+            "title": "Passeport ou Carte d'Identité",
+            "desc": "Téléchargez une copie claire du passeport ou de la carte d'identité de l'enfant"
+        },
+        "browsefiles": "Parcourir les fichiers",
+        "Accepted formats: PDF, DOC, DOCX": "Formats acceptes: PDF, DOC, DOCX",
+        "title": "Sélectionner les Documents",
+        "desc": "Téléchargez les documents requis pour la candidature",
+        "birthcertificate": {
+            "title": "Acte de Naissance",
+            "desc": "Téléchargez une copie claire de l'acte de naissance de l'enfant"
+        },
+        "proofofaddress": {
+            "title": "Justificatif de Domicile",
+            "desc": "Téléchargez une facture récente ou un justificatif de domicile"
+        },
+        "recentreportcard": {
+            "title": "Bulletin Scolaire Récent",
+            "desc": "Téléchargez le dernier bulletin scolaire de l'enfant"
+        }
+    },
+    "chat": {
+        "writesubjet": "Écrire le sujet...",
+        "writemessage": "Écrire le message..."
+    },
+    "newchat": {
+        "hint": "Rechercher des contacts...",
+        "frequendlycontacted": "Contacts Fréquents",
+        "allcontacts": "Tous les Contacts"
+    },
+    "grades": {
+        "child_average": "Moyenne de l'Enfant",
+        "class_average": "Moyenne de la Classe",
+        "history": "Historique des Notes",
+        "export_pdf": "Exporter PDF"
+    },
+    "auth": {
+        "create": {
+            "title": "Créer un compte",
+            "select_role": "Sélectionner un rôle",
+            "full_name": "Nom complet",
+            "phone_number": "Numéro de téléphone",
+            "email": "Email",
+            "create_password": "Créer un mot de passe",
+            "password_hint": "Doit contenir au moins 8 caractères et être alphanumérique.",
+            "terms_text": "J'accepte les ",
+            "terms_of_service": "Conditions d'utilisation",
+            "and": " et la ",
+            "data_policy": "Politique de confidentialité",
+            "enter_full_name": "Entrez votre nom complet",
+            "enter_phone_number": "Entrez le numéro de téléphone",
+            "enter_email": "Entrez votre email",
+            "enter_password": "Entrez votre mot de passe",
+            "phone_validation_error": "Veuillez entrer un numéro de téléphone valide",
+            "account_created": "Compte créé avec succès !"
+        },
+        "login": {
+            "title": "Bon retour!",
+            "desc": "Mettez votre numero et mot de passe",
+            "password": "Mot de passe",
+            "enter_password": "Min 8 caracteres, alphanumerique",
+            "forgot_pass": "Mot de passe oublie"
+        },
+        "forgot": {
+            "title": "Mot de passe oublie",
+            "desc": "Entrer votre email ou mot de passe pour recevoir les instructions de reinitialisation"
+        },
+        "verifyphone": {
+            "title": "Vérification du téléphone",
+            "desc": "Un code à 6 chiffres a été envoyé au ",
+            "verifypin": "Code de vérification",
+            "resendcode": "Renvoyer le code dans",
+            "code_sent": "Code de vérification envoyé avec succès !",
+            "verification_success": "Numéro de téléphone vérifié avec succès !",
+            "resend": "Renvoyer le code",
+            "invalidcode": "*code invalid. veuillez reessayer"
+        },
+        "biometric": {
+            "title": "Bienvenue!",
+            "desc": "Utiliser la biometrique pour vous connecter rapidement",
+            "touchid": {
+                "title": "Touch ID",
+                "desc": "Mettez votre doigt sur le capteur",
+                "scanning": "Scan...",
+                "fail": "Empreinte non reconnue"
+            },
+            "faceid": {
+                "title": "Face ID",
+                "desc": "Regarder la camera",
+                "scanning": "Scan...",
+                "fail": "Visage non reconnu"
+            }
+        },
+        "selectcountry": "selectionner un pays"
+    },
+    "home": {
+        "welcome": {
+            "title": "Bienvenue sur HEMLE! Connectons l'éducation de votre enfant"
+        },
+        "option": {
+            "apply": {
+                "title": "Postuler à une école partenaire",
+                "subtitle": "Votre enfant n'est pas encore affilié à une école"
+            },
+            "code": {
+                "title": "Entrer un code école",
+                "subtitle": "Votre enfant est déjà inscrit dans une école"
+            }
+        },
+        "code": {
+            "title": "Mon enfant est inscrit et j'ai un code école",
+            "description": "Si votre enfant est déjà inscrit dans une de nos écoles partenaires, entrez le code fourni par son école pour accéder aux mises à jour en temps réel et aux services.",
+            "input_label": "Entrer le code école",
+            "input_hint": "ex. : HEINT254",
+            "validate_button": "Valider le code"
+        },
+        "find_school": {
+            "title": "Mon enfant n'est pas encore inscrit dans une école",
+            "description": "Parcourez notre liste d'écoles partenaires, comparez les programmes et les frais de scolarité, et postulez directement via l'application.",
+            "button": "Trouver une École"
+        },
+        "appbar": {
+            "nochild": "Aucun enfant selectionne"
+        },
+        "homeworkfordat": "Devoirs pour {}",
+        "homeworkforlongterm": "Devoirs à long terme",
+        "duedate": "Date d'échéance : {}",
+        "pendingpayment": "Paiements en attente",
+        "title": "Accueil",
+        "pendingapps": "Demandes en attente"
+    },
+    "nav": {
+        "bottombar": {
+            "label": {
+                "home": "Accueil",
+                "results": "Résultats",
+                "transport": "Transport",
+                "clubs": "Clubs",
+                "chats": "Messages"
+            }
+        }
+    },
+    "error": {
+        "system": {
+            "title": "Erreur systeme :/\nServeur introuvable"
+        },
+        "connect": {
+            "title": "Connexion perdue :/\nEssayer de rafraichir "
+        },
+        "grade": {
+            "title": "Aucun devoir pour l'instant",
+            "desc": "Vous n'avez aucun devoir pour le moment"
+        }
+    },
+    "findschool": {
+        "title": "Trouver une École",
+        "searchschool": "Rechercher une école...",
+        "nursery": "Maternelle",
+        "primary": "Primaire",
+        "secondary": "Secondaire",
+        "private": "Privé",
+        "public": "Public",
+        "allcities": "Toutes les villes",
+        "alltypes": "Tous les types",
+        "allstatus": "Tous les statuts",
+        "allranges": "Toutes les gammes",
+        "resultslength": "{} résultats",
+        "priceperyear": "/ an",
+        "noresults": "Aucune école trouvée correspondant à vos critères",
+        "clearfilters": "Effacer tous les filtres"
+    },
+    "schoolprofile": {
+        "reviews": {
+            "title": "Revues"
+        },
+        "applythisschool": "Postuler à cette École",
+        "about": {
+            "title": "À propos"
+        },
+        "programs": {
+            "title": "Programmes"
+        },
+        "tuiton": {
+            "title": "Frais de Scolarité"
+        }
+    },
+    "application_status": {
+        "accepted": {
+            "title": "Accepté",
+            "description": "Félicitations ! Votre enfant a été accepté à {schoolName}. Vous pouvez maintenant accéder à votre compte."
+        },
+        "pending": {
+            "title": "En attente",
+            "description": "Votre candidature est en cours de traitement par l'administration de {schoolName}. Attendez des nouvelles bientôt."
+        },
+        "rejected": {
+            "title": "Rejeté",
+            "description": "Votre candidature n'a pas été acceptée pour ce trimestre. Vous pouvez postuler à nouveau lors de la prochaine période d'inscription."
+        },
+        "school_code": "Code de l'école",
+        "access_account": "Accéder à mon compte",
+        "back_home": "Retour à l'accueil",
+        "try_again": "Postuler à nouveau"
+    },
+    "tuition": {
+        "title": "Portefeuille",
+        "desc": "Aperçu des frais de scolarité",
+        "current": "Scolarité",
+        "history": "Historique",
+        "upcoming": "À venir",
+        "current_page": "Scolarité actuelle",
+        "history_page": "Historique des frais",
+        "upcoming_page": "Frais à venir",
+        "search_transactions": "Rechercher des transactions",
+        "all_children": "Tous les enfants",
+        "all_schools": "Toutes les écoles"
+    },
+    "reminder": {
+        "set_reminder": "Définir un rappel",
+        "set_alert_description": "Définir une alerte pour ne pas oublier",
+        "receive_alert": "Recevoir l'alerte",
+        "alert_time": "Heure de l'alerte",
+        "delivery_channels": "Canaux de livraison",
+        "channel_push": "Notification",
+        "channel_sms": "SMS",
+        "channel_email": "E-mail",
+        "save_alert": "Sauvegarder l'alerte",
+        "pay_now": "Payer maintenant",
+        "set_reminder_button": "Définir un rappel"
+    },
+    "payment_status": {
+        "title": "Statut du paiement",
+        "desc": "Statut en temps réel de votre paiement",
+        "pending": "En attente",
+        "processing": "En traitement",
+        "verificating": "En vérification",
+        "completed": "Terminé",
+        "pending_desc": "En attente de confirmation du paiement",
+        "processing_desc": "Votre paiement est en cours de traitement",
+        "verificating_desc": "Votre paiement est en cours de vérification",
+        "completed_desc": "Paiement confirmé avec succès",
+        "reference_id": "ID de référence",
+        "amount": "Montant",
+        "payment_details": "Détails du paiement",
+        "method": "Méthode",
+        "last_updated": "Dernière mise à jour",
+        "estimated_time": "Temps estimé",
+        "view_history": "Voir l'historique"
+    },
+    "results": {
+        "title": "Résultats",
+        "select_term": "Sélectionner le trimestre",
+        "mathematics": "Mathématiques",
+        "english": "Anglais",
+        "science": "Sciences",
+        "history": "Histoire",
+        "transport": "Transport",
+        "class_average": "Moyenne de classe",
+        "no_scores": "Aucun score disponible"
+    },
+    "onboarding": {
+        "page1": {
+            "title": "Mises à jour en temps réel et gestion scolaire sans effort—rendre la vie scolaire plus facile pour chaque parent."
+        },
+        "page2": {
+            "title": "Découvrez la bonne école et postulez en quelques minutes, restez au courant des notes et des devoirs instantanément et suivez le bus de votre enfant."
+        },
+        "page3": {
+            "title": "Plus rapide, plus simple et plus sécurisé que n'importe quel portail scolaire—tout ce dont les parents ont besoin dans une seule application."
+        },
+        "page4": {
+            "title": "Commençons !",
+            "description": "Choisissez comment vous souhaitez continuer"
+        },
+        "lastpagedesc": "Choisissez comment vous souhaitez continuer",
+        "ihaveaccountlogin": "J'ai un compte : Se connecter",
+        "continueasguest": "Continuer en tant qu'invité"
+    },
+    "methodpayment": {
+        "title": "Méthode de Paiement",
+        "desc": "Choisissez votre méthode de paiement préférée",
+        "schoolname": "École Maarif"
+    },
+    "methodspayment": {
+        "orangemoney": "Orange Money",
+        "mobilemoney": "Mobile Money",
+        "banktransactions": "Transactions Bancaires"
+    },
+    "payment": {
+        "confirm_payment": "Confirmer le Paiement",
+        "review_info": "Vérifiez vos informations de paiement",
+        "invoice": "Facture",
+        "amount": "Montant",
+        "method": "Méthode de Paiement",
+        "recipient": "Bénéficiaire",
+        "downloadpdfreceipt": "Télécharger le reçu PDF",
+        "confirm_continue": "Confirmer et Continuer"
+    },
+    "card_info": {
+        "title": "Informations de Carte",
+        "desc": "Entrez les détails de votre carte pour finaliser le paiement",
+        "reference_id": "ID de Référence",
+        "card_number": "Numéro de Carte",
+        "invalid_card": "Numéro de carte invalide",
+        "card_holder": "Nom du Titulaire",
+        "enter_full_name": "Entrez le nom complet comme sur la carte",
+        "expiration_date": "Date d'Expiration",
+        "security_code": "Code de Sécurité",
+        "proceed": "Procéder au Paiement"
+    },
+    "transport": {
+        "title": "Lignes de Transport",
+        "driver": "Chauffeur :",
+        "stops": "Arrêts :"
+    },
+    "detailstransport": {
+        "title": "Détails de la Ligne",
+        "desc": "Regardez les details et souscrivez si ca vous convient",
+        "information": "Informations",
+        "driver": "Chauffeur",
+        "capacity": "Capacité",
+        "operating_days": "Jours de Fonctionnement",
+        "pickup": "Heure de Prise en Charge",
+        "dropoff": "Heure de Dépose",
+        "select_stop": "Sélectionnez Votre Arrêt",
+        "subscribe": "S'abonner à la Ligne"
+    },
+    "tracking": {
+        "title": "Suivi du Bus",
+        "remaining_time": "Temps Restant",
+        "picking_up_time": "Heure de Prise en Charge",
+        "arriving_time": "Heure d'Arrivée",
+        "delayed": "Retardé",
+        "delay_message": "Le bus est retardé en raison du trafic. Retard estimé : 15 minutes."
+    },
+    "clubs": {
+        "title": "Clubs & Activités",
+        "desc": "Explorez et rejoignez les clubs et activités scolaires"
+    },
+    "profile": {
+        "title": "Profil",
+        "desc": "Gérez votre compte et les informations de vos enfants",
+        "myprofile": "Mon Profil",
+        "mychildren": "Mes Enfants",
+        "submittedapplications": "Candidatures Soumises",
+        "currentschool": "École Actuelle",
+        "view": "Voir"
+    }
+}
