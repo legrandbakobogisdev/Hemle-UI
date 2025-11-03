@@ -83,6 +83,16 @@
         "forgetmypassword": "Forget My Password?",
         "termsservices": "Terms and Services"
     },
+      "settings": {
+    "biometrics": {
+      "enabled": "Biometric enabled",
+      "disabled": "Biometric disabled"
+    },
+    "notifications": {
+      "enabled": "Notifications enabled",
+      "disabled": "Notifications disabled"
+    }
+  },
     "childprofile": {
         "title": "Child Profile",
         "desc": "Enter your child's information"
@@ -195,15 +205,43 @@
             "touchid": {
                 "title": "Touch ID",
                 "desc": "Place your finger on the sensor",
-                "scanning": "Scanning...",
-                "fail": "Fingerprint not recongnized"
+                "fail": "Touch ID failed",
+                "fail_message": "Touch ID failed. Please try again",
+                "scanning": "Fingerprint scan in progress...",
+                "authenticating": "Touch ID Authentication",
+                "authenticating_desc": "Place your finger on the sensor",
+                "success": "Fingerprint recognized!",
+                "reason": "Authenticate with Touch ID to access your account",
+                "not_available": "Touch ID not available on this device",
+                "no_hardware": "Fingerprint sensor not available",
+                "not_enrolled": "No fingerprints configured",
+                "lockout": "Touch ID locked"
             },
             "faceid": {
                 "title": "Face ID",
                 "desc": "Look at the camera",
-                "scanning": "Scan...",
-                "fail": "face not recongnized"
-            }
+                "fail": "Touch ID failed",
+                "fail_message": "Touch ID failed. Please try again",
+                "scanning": "Fingerprint scan in progress...",
+                "authenticating": "Touch ID Authentication",
+                "authenticating_desc": "Place your finger on the sensor",
+                "success": "Fingerprint recognized!",
+                "reason": "Authenticate with Touch ID to access your account",
+                "not_available": "Touch ID not available on this device",
+                "no_hardware": "Fingerprint sensor not available",
+                "not_enrolled": "No fingerprints configured",
+                "lockout": "Touch ID locked"
+            },
+            "reason": "Authenticate to access your account",
+            "not_available": "Biometric authentication not available",
+            "no_hardware": "No biometric sensor available",
+            "temporary_lockout": "Temporarily locked, try again later",
+            "lockout": "Biometrics locked, use your password",
+            "not_enrolled": "No fingerprint/face configured",
+            "passcode_not_set": "PIN code not set on device",
+            "not_supported": "Biometrics not supported",
+            "authentication_failed": "Authentication failed",
+            "unknown_error": "Unknown error"
         },
         "selectcountry": "select country"
     },

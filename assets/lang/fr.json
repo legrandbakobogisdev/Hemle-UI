@@ -83,6 +83,16 @@
         "savechange": "Sauvegarder les modifications",
         "termsservices": "Termes Et Services"
     },
+    "settings": {
+        "biometrics": {
+            "enabled": "Biométrie activée",
+            "disabled": "Biométrie désactivée"
+        },
+        "notifications": {
+            "enabled": "Notifications activées",
+            "disabled": "Notifications désactivées"
+        }
+    },
     "detailschild": {
         "title": "Confirmer les Informations",
         "desc": "Veuillez vérifier les informations avant de soumettre"
@@ -191,15 +201,43 @@
             "touchid": {
                 "title": "Touch ID",
                 "desc": "Mettez votre doigt sur le capteur",
-                "scanning": "Scan...",
-                "fail": "Empreinte non reconnue"
+                "fail": "Touch ID a échoué",
+                "fail_message": "Touch ID a échoué. Veuillez réessayer",
+                "scanning": "Scan de l'empreinte en cours...",
+                "authenticating": "Authentification Touch ID",
+                "authenticating_desc": "Placez votre doigt sur le capteur",
+                "success": "Empreinte reconnue !",
+                "reason": "Authentifiez-vous avec Touch ID pour accéder à votre compte",
+                "not_available": "Touch ID non disponible sur cet appareil",
+                "no_hardware": "Capteur d'empreinte non disponible",
+                "not_enrolled": "Aucune empreinte digitale configurée",
+                "lockout": "Touch ID verrouillé"
             },
             "faceid": {
                 "title": "Face ID",
                 "desc": "Regarder la camera",
-                "scanning": "Scan...",
-                "fail": "Visage non reconnu"
-            }
+                "fail": "Face ID failed",
+                "fail_message": "Face ID failed. Please try again",
+                "scanning": "Face scan in progress...",
+                "authenticating": "Face ID Authentication",
+                "authenticating_desc": "Position your face in the frame",
+                "success": "Face ID recognized!",
+                "reason": "Authenticate with Face ID to access your account",
+                "not_available": "Face ID not available on this device",
+                "no_hardware": "Face ID not supported",
+                "not_enrolled": "No face configured for Face ID",
+                "lockout": "Face ID locked"
+            },
+            "reason": "Authentifiez-vous pour accéder à votre compte",
+            "not_available": "Authentification biométrique non disponible",
+            "no_hardware": "Aucun capteur biométrique disponible",
+            "temporary_lockout": "Temporairement verrouillé, réessayez plus tard",
+            "lockout": "Biométrie verrouillée, utilisez votre mot de passe",
+            "not_enrolled": "Aucune empreinte/configurée",
+            "passcode_not_set": "Code PIN non configuré sur l'appareil",
+            "not_supported": "Biométrie non supportée",
+            "authentication_failed": "Échec de l'authentification",
+            "unknown_error": "Erreur inconnue"
         },
         "selectcountry": "selectionner un pays"
     },

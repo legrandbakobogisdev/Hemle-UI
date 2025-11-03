@@ -12,6 +12,7 @@ import 'package:hemle/features/Settings/presentation/screens/faq.dart';
 import 'package:hemle/features/Settings/presentation/screens/policyprivacy.dart';
 import 'package:hemle/features/Settings/presentation/screens/termsservices.dart';
 import 'package:hemle/features/splashscreen/presentation/widgets/language_selector.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -21,6 +22,60 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
+  bool _biometricsEnabled = false;
+  bool _notificationsEnabled = false;
+  late SharedPreferences _prefs;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPreferences();
+  }
+
+  Future<void> _loadPreferences() async {
+    _prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _biometricsEnabled = _prefs.getBool('biometrics_enabled') ?? false;
+      _notificationsEnabled = _prefs.getBool('notifications_enabled') ?? true;
+    });
+  }
+
+  Future<void> _toggleBiometrics(bool value) async {
+    setState(() {
+      _biometricsEnabled = value;
+    });
+    await _prefs.setBool('biometrics_enabled', value);
+    
+    // Optionnel : Afficher un feedback
+    // if (value) {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //     SnackBar(content: Text('settings.biometrics.enabled'.tr())),
+    //   );
+    // } else {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //     SnackBar(content: Text('settings.biometrics.disabled'.tr())),
+    //   );
+    // }
+  }
+
+  Future<void> _toggleNotifications(bool value) async {
+    setState(() {
+      _notificationsEnabled = value;
+    });
+    await _prefs.setBool('notifications_enabled', value);
+    
+    // Optionnel : Afficher un feedback
+    // if (value) {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //     SnackBar(content: Text('settings.notifications.enabled'.tr())),
+    //   );
+    // } else {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //     SnackBar(content: Text('settings.notifications.disabled'.tr())),
+    //   );
+    // }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +84,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
       body: Column(
         children: [
           CustomHeader(title: 'global.settings'.tr()),
-
           _body(),
         ],
       ),
@@ -54,8 +108,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 CustomTitleWidgetSeparated(
                   title: 'global.notifications'.tr(),
                   widget: Switch.adaptive(
-                    value: true,
-                    onChanged: (value) {},
+                    value: _notificationsEnabled,
+                    onChanged: _toggleNotifications,
                     activeColor: AppColors.primary,
                   ),
                 ),
@@ -63,8 +117,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 CustomTitleWidgetSeparated(
                   title: 'global.biometrics'.tr(),
                   widget: Switch.adaptive(
-                    value: true,
-                    onChanged: (value) {},
+                    value: _biometricsEnabled,
+                    onChanged: _toggleBiometrics,
                     activeColor: AppColors.primary,
                   ),
                 ),
@@ -75,7 +129,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           _buildSection(
             'global.helpsupport'.tr(),
             Column(
-              spacing: 15,
               children: [
                 buildInfoRowCustom(
                   SvgPicture.asset('assets/images/74.svg'),
@@ -95,7 +148,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           _buildSection(
             'global.privacy'.tr(),
             Column(
-              spacing: 15,
               children: [
                 buildInfoRowCustom(
                   SvgPicture.asset('assets/images/75.svg'),
@@ -126,7 +178,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
           _buildSection(
             'Contact',
             Column(
-              spacing: 15,
               children: [
                 buildInfoRowCustom(
                   SvgPicture.asset('assets/images/77.svg'),
@@ -150,7 +201,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ),
 
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
 
           Center(
             child: CustomText(
@@ -170,7 +221,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       children: [
         SizedBox(height: topSpacing),
         CustomText(label: title, fontSize: 16, fontWeight: FontWeight.w600),
-        SizedBox(height: 15),
+        const SizedBox(height: 15),
         content,
       ],
     );
@@ -196,12 +247,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 color: darkColor == true ? null : AppColors.black,
                 fontWeight: FontWeight.w500,
               ),
-              Spacer(),
-              CupertinoListTileChevron(),
+              const Spacer(),
+              const CupertinoListTileChevron(),
             ],
           ),
-
-          Divider(),
+          const Divider(),
         ],
       ),
     );

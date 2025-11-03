@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:hemle/components/custom_text.dart';
+import 'package:hemle/features/navigation/presentation/screens/wrapper.dart';
 import 'package:hemle/features/splashscreen/presentation/screens/splashscreen_screen.dart';
 import 'package:hemle/widgets/connectivity_wrapper.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Hemle',
       home: ConnectivityWrapper(
-        child: const SplashscreenScreen()),
+        child: const WrapperScreen()),
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
