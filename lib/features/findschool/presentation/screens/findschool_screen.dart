@@ -282,7 +282,12 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
                         ? const Color(0xFFDEEBFF)
                         : Colors.transparent,
                   ),
-                  child: Center(child: SvgPicture.asset("assets/images/31.svg", color: _filterActive ? AppColors.primary : null,)),
+                  child: Center(
+                    child: SvgPicture.asset(
+                      "assets/images/31.svg",
+                      color: _filterActive ? AppColors.primary : null,
+                    ),
+                  ),
                 ),
               ),
             ],
@@ -391,7 +396,14 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
                             : Colors.transparent,
                       ),
                     ),
-                    child:  Center(child: SvgPicture.asset('assets/images/33.svg', color: selectedDisposition == 'listview' ? AppColors.primary : null,))
+                    child: Center(
+                      child: SvgPicture.asset(
+                        'assets/images/33.svg',
+                        color: selectedDisposition == 'listview'
+                            ? AppColors.primary
+                            : null,
+                      ),
+                    ),
                   ),
                 ),
 
@@ -415,7 +427,14 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
                             : Colors.transparent,
                       ),
                     ),
-                    child: Center(child: SvgPicture.asset('assets/images/34.svg', color: selectedDisposition == 'gridview' ? AppColors.primary : null,))
+                    child: Center(
+                      child: SvgPicture.asset(
+                        'assets/images/34.svg',
+                        color: selectedDisposition == 'gridview'
+                            ? AppColors.primary
+                            : null,
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -448,7 +467,7 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
             : GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  childAspectRatio: .8,
+                  childAspectRatio: .86,
                   crossAxisSpacing: 4,
                   mainAxisSpacing: 8,
                 ),
@@ -511,11 +530,11 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
               // Logo de l'école
               SizedBox(
                 width: (AppSizes.screenWidth(context) - 32) / 4,
-                height: 50,
+                height: 65,
                 child: const CircleAvatar(radius: 50),
               ),
 
-              const SizedBox(width: 12),
+              const SizedBox(width: 8),
 
               // Informations de l'école
               Expanded(
@@ -619,7 +638,7 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const CircleAvatar(radius: 30),
+              const CircleAvatar(radius: 35),
 
               const Spacer(),
 
@@ -636,7 +655,7 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
                 children: [
                   Row(
                     children: [
-                     SvgPicture.asset('assets/images/28.svg'),
+                      SvgPicture.asset('assets/images/28.svg'),
                       const SizedBox(width: 4),
                       Expanded(
                         child: CustomText(
@@ -674,7 +693,7 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
               Row(
                 children: [
                   CustomText(
-                    label: NumberFormatter.formatNumber(
+                    label: NumberFormatter.formatPrice(
                       school.amount,
                       locale: 'fr',
                     ),
@@ -684,7 +703,7 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
                   ),
                   const SizedBox(width: 4),
                   CustomText(
-                    label: 'findschool.priceperyear'.tr(),
+                    label: 'findschool.priceperyear'.tr(args: ['XAF']),
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
                     color: const Color(0xFF22A06B),
@@ -697,6 +716,4 @@ class _FindschoolScreenState extends State<FindschoolScreen> {
       ),
     );
   }
-
-  
 }
