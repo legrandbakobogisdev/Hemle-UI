@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:hemle/features/splashscreen/presentation/screens/carousel_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:hemle/features/auth/presentation/screens/loginAccount_screen.dart';
 import 'package:hemle/features/auth/presentation/screens/biometric_screen.dart';
@@ -12,8 +13,6 @@ class WrapperScreen extends StatefulWidget {
 }
 
 class _WrapperScreenState extends State<WrapperScreen> {
-  bool _isLoading = true;
-  late Widget _targetScreen;
 
   @override
   void initState() {
@@ -29,51 +28,47 @@ class _WrapperScreenState extends State<WrapperScreen> {
       final bool isBiometricsEnabled = prefs.getBool('biometrics_enabled') ?? false;
       
       if (mounted) {
-        setState(() {
-          _targetScreen = isBiometricsEnabled 
-              ? _buildScreenWithWillPopScope(BiometricScreen())
-              : _buildScreenWithWillPopScope(LoginaccountScreen());
-          _isLoading = false;
-        });
+        // Utilisation de pushAndRemoveUntil pour une navigation propre
+        if (isBiometricsEnabled) {
+          Navigator.pushAndRemoveUntil(
+            context,
+            CupertinoPageRoute(builder: (context) => BiometricScreen()),
+            (route) => false, // Supprime toutes les routes précédentes
+          );
+        } else {
+          Navigator.pushAndRemoveUntil(
+            context,
+            CupertinoPageRoute(builder: (context) => CarouselScreen()),
+            (route) => false, // Supprime toutes les routes précédentes
+          );
+        }
       }
     } catch (e) {
+      // Fallback vers le login en cas d'erreur
       if (mounted) {
-        setState(() {
-          _targetScreen = _buildScreenWithWillPopScope(LoginaccountScreen());
-          _isLoading = false;
-        });
+        Navigator.pushAndRemoveUntil(
+          context,
+          CupertinoPageRoute(builder: (context) => LoginaccountScreen()),
+          (route) => false,
+        );
       }
     }
-  }
-
-  // Fonction pour envelopper un écran avec blocage du retour
-  Widget _buildScreenWithWillPopScope(Widget screen) {
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
-      child: screen,
-    );
   }
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return const Scaffold(
-        backgroundColor: Colors.white,
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CupertinoActivityIndicator(radius: 16),
-              SizedBox(height: 16),
-              Text('Chargement...', style: TextStyle(fontSize: 16)),
-            ],
-          ),
+    return const Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CupertinoActivityIndicator(radius: 16),
+            // SizedBox(height: 16),
+            // Text('Chargement...', style: TextStyle(fontSize: 16)),
+          ],
         ),
-      );
-    }
-
-    return _targetScreen;
+      ),
+    );
   }
 }
